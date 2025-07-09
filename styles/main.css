@@ -164,3 +164,50 @@ a.btn {
     background-color: #AD1818;
     color: #FFFFFF;
 }
+
+header {
+    min-width: 1150px;
+    padding: 32px 125px 0 125px;
+}
+
+.header_container {
+    width: 1150px;
+    margin: 0 auto;
+}
+
+.logo-link {
+    display: inline-block;
+    margin-right: 545px;
+}
+
+.logo {
+    display: block;
+    width: 127px;
+    height: 22px;
+}
+
+.nav_header {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 1px;
+}
+
+.nav_header_link {
+    display: inline-block;
+    
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.03em;
+    text-decoration: none;
+    color: #121212;
+}
+
+.nav_header_link:not(:last-child) {
+    margin-right: 60px;
+}
+
+.first_section {
+    padding-top: 69px;
+}
