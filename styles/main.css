@@ -2,10 +2,19 @@ html {
     scroll-behavior: smooth;
 }
 
+h1,
+h2,
+h3,
+a,
+p,
+div {
+    letter-spacing: -0.03em;
+}
+
 body {
     font-family: 'Manrope', sans-serif;
     width: 100%;
-    background: #F5F5F5;
+    overflow-x: hidden !important;
 }
 
 section {
@@ -47,6 +56,7 @@ section:first-child {
 
 .section-black {
     background-color: #000;
+    padding: 151px 0 150px;
 }
 
 .white {
@@ -74,18 +84,20 @@ p.description {
     text-align: left;
 }
 
-.interior { 
-    position: relative;
-    margin-top: 31px;
-    width: 1150px;
-    height: 500px;
+.interior {
+  width: 100%;
+  max-width: 1150px;
+  height: 500px;
+  position: relative;
+  margin-top: 31px;
+  display: flex;
 
-    background-image: url('../resources/interior.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-
-    
+  background-image: url(../resources/interior.png);
+  background-size: cover; /* лучше для адаптивности */
+  background-position: center;
+  background-repeat: no-repeat;
 }
+
 
 .image_text {
     color: #FFFFFF;
@@ -150,6 +162,8 @@ a.btn {
 }
 
 .service__image {
+    width: 100%;
+    height: 270px;
     margin-bottom: 13px;
 }
 
@@ -177,18 +191,17 @@ a.btn {
 }
 
 header {
-    min-width: 1150px;
+    width: 100%;
     padding: 32px 125px 0 125px;
 }
 
 .header_container {
     width: 1150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
     margin: 0 auto;
-}
-
-.logo-link {
-    display: inline-block;
-    margin-right: 555px;
 }
 
 .logo {
@@ -345,4 +358,210 @@ footer {
 .footer_link_grey {
     color: #FFF;
     opacity: 0.5;
+}
+
+
+.full_section_content {
+    position: relative;
+    margin: 0 auto;
+    width: 1400px;
+    padding: 150px 125px 0 125px;
+    height: 100%;
+}
+
+.section-image {
+    padding: 0;
+}
+
+.black_padding_top {
+    padding-top: 0px;
+}
+
+@media (max-width: 500px) {
+
+    .container {
+        width: auto;
+        margin: 0 auto;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;        
+        padding: 32px 5px 0 5px;;
+    }
+
+    .header_container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-link {
+        margin-right: auto;
+    }
+
+    .nav_header_link:not(:last-child) {
+        margin-right: 5px;
+    }
+
+    .nav_header {
+        float: right;
+    }
+
+    .nav_header_link {
+        font-size: 12px;
+    }
+
+    section {
+        padding: 5px;
+        padding-top: 50px;
+    }
+
+    .first_section {
+        padding-top: 20px;
+    }
+
+    h1 {
+        font-size: 32px;
+        line-height: 32px;
+        margin-bottom: 30px;
+    }
+
+    .first_section {
+        box-sizing: border-box;
+    }
+
+    .interior {
+        height: 200px; /* или auto, если содержимое управляет размером */
+        background-size: cover; /* можно также contain, если нужно полностью влезать */
+        margin-top: 0px;
+    }
+
+    .image_text {
+        width: auto;
+        position: relative;
+        left: 5px;
+        font-size: 14px;
+        line-height: 18px;
+        margin-top: 0px;
+        bottom: 0;
+        text-align: left;
+        top: 120px;
+    }
+
+    p.description {
+        font-size: 28px;
+        line-height: 35px;
+        margin-top: 20px;
+    }
+
+    a.btn {
+        margin-top: 20px;
+        width: auto;
+        padding: 20px;
+        font-size: 16px;
+    }
+
+    .project  {
+        margin-top: 30px;
+    }
+
+    .project__image {
+        width: 100%;
+        height: 200px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    .project__link {
+        font-size: 14px;
+    }
+
+    .fullWidthBtn {
+        margin-top: 40px !important;
+        height: 60px;
+        font-size: 20px;
+        line-height: 60px;
+    }
+
+    .section-long {
+        padding-bottom: 50px;
+    }
+
+    .section-black {
+        width: auto;
+        margin: 0 auto;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 50px;
+    }
+
+    .full_section_content {
+        width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 51px 5px 0 5px;
+    }
+
+    .section-image {
+        width: auto;
+        margin: 0 auto;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        height: 400px;
+    }
+
+    .section-image_text-p {
+        bottom: 40px;
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .contact_block_link {
+        margin-top: 15px;
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .contact_block_link_email {
+        margin-top: 15px;
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    footer {
+        width: auto;
+        margin: 0 auto;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .style_mobile_footer {
+        width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 32px 5px 32px 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer_menu_block {
+        width: auto;
+        margin-bottom: 30px;
+    }
+
+    .footer_text {
+        font-size: 18px;
+    }
 }

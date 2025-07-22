@@ -8,14 +8,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <div class="container">
         <header class="">
             <div class="header_container">
-                <a class="logo-link" href="/">
-                    <img class="logo" src="resources/logo_metrica.png" alt="Логотип Метрика">
-                </a>
+                <img class="logo" src="resources/logo_metrica.png" alt="Логотип Метрика">
                 <div class="nav_header">
                     <a href="" class="nav_header_link grey_nav_header">О НАС</a>
                     <a href="#project" class="nav_header_link">ПРОЕКТЫ</a>
@@ -25,7 +24,7 @@
             </div>
         </header>
         <section class="first_section">
-            <h1 style="width: 956px">Современные и стильные интерьеры для комфортной жизни</h1>
+            <h1>Современные и стильные<br>интерьеры для комфортной жизни</h1>
             <div class="interior">
                 <p class="image_text">Мы - команда квалифицированных дизайнеров и архитекторов, занимающихся разработкой и реализацией дизайн-проектов</p>
             </div>
@@ -60,7 +59,9 @@
                 </li>
             </ul>
         </section>
-        <section id="services" class="section-black section-long">
+    </div>
+    <section id="services" class="section-black section-long">
+        <div class="full_section_content black_padding_top">
             <h2 class="white">Услуги</h2>
             <ul class="services">
                 <li class="service">
@@ -80,12 +81,16 @@
                     <h3 class="white">Комплектация — 5% от стоимости спецификации</h3>
                 </li>
             </ul>
-        </section>
-        <section class="section-image">
+        </div>
+    </section>
+    <section class="section-image">
+        <div class="full_section_content">
             <div class="section-image_text">
                 <p  class="section-image_text-p">Проект  Двухкомнтаной<br>квартиры в ЖК Лесной Пейзаж</p>
             </div>
-        </section>
+        </div>
+    </section>
+    <div class="container">
         <section id="contact" class="contact-block">
             <h2 class="contact_h2">Контакты</h2>
             <p>
@@ -94,9 +99,11 @@
             <p>
                 <a class="contact_block_link_email" href="mailto:hello@mail.com">hello@mail.com</a>
             </p>
-            <hr class="line_contact">           
+            <hr class="line_contact">
         </section>
-        <footer>
+    </div>
+    <footer>
+        <div class="style_mobile_footer">
             <div class="footer_menu_block">
                 <a href="" class="nav_header_link footer_link footer_link_grey">О НАС</a>
                 <a href="#project" class="nav_header_link footer_link">ПРОЕКТЫ</a>
@@ -104,7 +111,7 @@
                 <a href="#contact" class="nav_header_link footer_link">КОНТАКТЫ</a>
             </div>
             <p class="footer_text">студия дизайна интерьера Метрика — 2023</p>
-        </footer>
-    </div>
+        </div>
+    </footer>
 </body>
 </html>
