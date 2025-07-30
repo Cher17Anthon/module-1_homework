@@ -228,13 +228,6 @@ header {
     color: #121212;
 }
 
-.grey_nav_header {
-    color: grey;
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 5px;
-}
-
 .nav_header_link:not(:last-child) {
     margin-right: 57px;
 }
@@ -355,10 +348,7 @@ footer {
     opacity: 0.5;
 }
 
-.footer_link_grey {
-    color: #FFF;
-    opacity: 0.5;
-}
+
 
 
 .full_section_content {
@@ -375,6 +365,18 @@ footer {
 
 .black_padding_top {
     padding-top: 0px;
+}
+
+.nav_header_link:hover {
+    color: #121212;
+    opacity: 0.5;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.footer_link:hover {
+    color: #FFF;
+    opacity: 0.5;
+    border-bottom: 1px solid rgba(77, 77, 77, 0.5);
 }
 
 @media (max-width: 500px) {
@@ -563,5 +565,172 @@ footer {
 
     .footer_text {
         font-size: 18px;
+    }
+}
+
+@media (max-width: 1400px) and (min-width: 501px) {
+    .container {
+        width: auto;
+        margin: 0 auto;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;        
+        padding: 32px 25px 0 25px;;
+    }
+
+    .header_container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .logo-link {
+        margin-right: auto;
+    }
+
+    .nav_header_link:not(:last-child) {
+        margin-right: 25px;
+    }
+
+    .nav_header {
+        float: right;
+    }
+
+    section {
+        padding: 25px;
+        padding-top: 50px;
+    }
+
+    .first_section {
+        padding-top: 20px;
+    }
+
+    h1 {
+        font-size: 42px;
+        line-height: 42px;
+        margin-bottom: 40px;
+    }
+
+    .first_section {
+        box-sizing: border-box;
+    }
+
+    .interior {
+        height: 400px; /* или auto, если содержимое управляет размером */
+        background-size: cover; /* можно также contain, если нужно полностью влезать */
+        margin-top: 0px;
+    }
+
+    .image_text {
+        width: auto;
+        position: relative;
+        left: 18px;
+        font-size: 18px;
+        line-height: 18px;
+        margin-top: 0px;
+        bottom: 0;
+        text-align: left;
+        top: 320px;
+    }
+
+    p.description {
+        font-size: 35px;
+        line-height: 51px;
+        margin-top: 20px;
+    }
+
+    a.btn {
+        width: auto;
+        padding: 23px;
+    }
+
+    .project  {
+        margin-top: 50px;
+    }
+
+    .project__image {
+        width: 100%;
+        height: 350px;
+    }
+
+    .fullWidthBtn {
+        margin-top: 60px !important;
+        height: 90px;
+        line-height: 90px;
+    }
+
+    .section-long {
+        padding-bottom: 50px;
+    }
+
+    .section-black {
+        width: auto;
+        margin: 0 auto;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 50px;
+    }
+
+    .full_section_content {
+        width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 51px 25px 0 25px;
+    }
+
+    .section-image {
+        width: auto;
+        margin: 0 auto;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        height: 550px;
+    }
+
+    .section-image_text-p {
+        bottom: 40px;
+    }
+
+    .contact_block_link {
+        margin-top: 25px;
+        font-size: 33px;
+        line-height: 45px;
+    }
+
+    .contact_block_link_email {
+        margin-top: 25px;
+        font-size: 33px;
+        line-height: 45px;
+    }
+
+    footer {
+        width: auto;
+        margin: 0 auto;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .style_mobile_footer {
+        width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 32px 25px 32px 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer_menu_block {
+        width: auto;
+        margin-bottom: 30px;
     }
 }
