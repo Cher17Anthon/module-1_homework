@@ -86,7 +86,6 @@ p.description {
 
 .interior {
   width: 100%;
-  max-width: 1150px;
   height: 500px;
   position: relative;
   margin-top: 31px;
@@ -163,6 +162,7 @@ a.btn {
 
 .service__image {
     width: 100%;
+    object-fit: cover;
     height: 270px;
     margin-bottom: 13px;
 }
@@ -379,7 +379,7 @@ footer {
     border-bottom: 1px solid rgba(77, 77, 77, 0.5);
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
 
     .container {
         width: auto;
@@ -393,7 +393,7 @@ footer {
         width: 100%;
         margin: 0 auto;
         box-sizing: border-box;        
-        padding: 32px 5px 0 5px;;
+        padding: 32px 15px 0 15px;;
     }
 
     .header_container {
@@ -420,7 +420,7 @@ footer {
     }
 
     section {
-        padding: 5px;
+        padding: 15px;
         padding-top: 50px;
     }
 
@@ -457,8 +457,8 @@ footer {
     }
 
     p.description {
-        font-size: 28px;
-        line-height: 35px;
+        font-size: 25px;
+        line-height: 30px;
         margin-top: 20px;
     }
 
@@ -479,7 +479,8 @@ footer {
     }
 
     h3 {
-        font-size: 24px;
+        font-size: 20px;
+        line-height: 25px;
     }
 
     .project__link {
@@ -510,7 +511,7 @@ footer {
         width: 100%;
         margin: 0 auto;
         box-sizing: border-box;
-        padding: 51px 5px 0 5px;
+        padding: 51px 15px 0 15px;
     }
 
     .section-image {
@@ -524,8 +525,8 @@ footer {
 
     .section-image_text-p {
         bottom: 40px;
-        font-size: 20px;
-        line-height: 25px;
+        font-size: 18px;
+        line-height: 23px;
     }
 
     .contact_block_link {
@@ -566,13 +567,17 @@ footer {
     .footer_text {
         font-size: 18px;
     }
+
+    .service__image {
+        height: 200px;
+    }
 }
 
-@media (max-width: 1400px) and (min-width: 501px) {
+@media (max-width: 1399px) and (min-width: 1000px) {
     .container {
-        width: auto;
+        width: 100%;
         margin: 0 auto;
-        overflow-x: hidden;
+        overflow: hidden;
         margin: 0;
         padding: 0;
     }
@@ -581,7 +586,7 @@ footer {
         width: 100%;
         margin: 0 auto;
         box-sizing: border-box;        
-        padding: 32px 25px 0 25px;;
+        padding: 32px 125px 0 125px;
     }
 
     .header_container {
@@ -604,7 +609,7 @@ footer {
     }
 
     section {
-        padding: 25px;
+        padding: 35px 125px 35px 125px;
         padding-top: 50px;
     }
 
@@ -626,11 +631,11 @@ footer {
         height: 400px; /* или auto, если содержимое управляет размером */
         background-size: cover; /* можно также contain, если нужно полностью влезать */
         margin-top: 0px;
+        align-items: center;
     }
 
     .image_text {
         width: auto;
-        position: relative;
         left: 18px;
         font-size: 18px;
         line-height: 18px;
@@ -683,7 +688,7 @@ footer {
         width: 100%;
         margin: 0 auto;
         box-sizing: border-box;
-        padding: 51px 25px 0 25px;
+        padding: 51px 125px 0px 125px;
     }
 
     .section-image {
@@ -723,7 +728,174 @@ footer {
         width: 100%;
         margin: 0 auto;
         box-sizing: border-box;
-        padding: 32px 25px 32px 25px;
+        padding: 35px 125px 35px 125px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer_menu_block {
+        width: auto;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 999px) and (min-width: 701px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;        
+        padding: 32px 75px 0 75px;
+    }
+
+    .header_container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .logo-link {
+        margin-right: auto;
+    }
+
+    .nav_header_link:not(:last-child) {
+        margin-right: 25px;
+    }
+
+    .nav_header {
+        float: right;
+    }
+
+    section {
+        padding: 35px 75px 35px 75px;
+        padding-top: 50px;
+    }
+
+    .first_section {
+        padding-top: 20px;
+    }
+
+    h1 {
+        font-size: 42px;
+        line-height: 42px;
+        margin-bottom: 40px;
+    }
+
+    .first_section {
+        box-sizing: border-box;
+    }
+
+    .interior {
+        height: 400px; /* или auto, если содержимое управляет размером */
+        background-size: cover; /* можно также contain, если нужно полностью влезать */
+        margin-top: 0px;
+        align-items: center;
+    }
+
+    .image_text {
+        width: auto;
+        left: 18px;
+        font-size: 18px;
+        line-height: 18px;
+        margin-top: 0px;
+        bottom: 0;
+        text-align: left;
+        top: 320px;
+    }
+
+    p.description {
+        font-size: 35px;
+        line-height: 51px;
+        margin-top: 20px;
+    }
+
+    a.btn {
+        width: auto;
+        padding: 23px;
+    }
+
+    .project  {
+        margin-top: 50px;
+    }
+
+    .project__image {
+        width: 100%;
+        height: 350px;
+    }
+
+    .fullWidthBtn {
+        margin-top: 60px !important;
+        height: 90px;
+        line-height: 90px;
+    }
+
+    .section-long {
+        padding-bottom: 50px;
+    }
+
+    .section-black {
+        width: auto;
+        margin: 0 auto;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 50px;
+    }
+
+    .full_section_content {
+        width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 35px 75px 0 75px;
+    }
+
+    .section-image {
+        width: auto;
+        margin: 0 auto;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        height: 550px;
+    }
+
+    .section-image_text-p {
+        bottom: 40px;
+    }
+
+    .contact_block_link {
+        margin-top: 25px;
+        font-size: 33px;
+        line-height: 45px;
+    }
+
+    .contact_block_link_email {
+        margin-top: 25px;
+        font-size: 33px;
+        line-height: 45px;
+    }
+
+    footer {
+        width: auto;
+        margin: 0 auto;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .style_mobile_footer {
+        width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 32px 75px 0 75px;
         display: flex;
         flex-direction: column;
         justify-content: center;
