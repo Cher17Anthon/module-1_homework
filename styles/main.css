@@ -18,7 +18,7 @@ body {
 }
 
 section {
-    padding: 150px 125px 0 125px;
+    padding: 150px 0 0 0;
 }
 
 h1 {
@@ -65,14 +65,13 @@ section:first-child {
 
 .container {
     margin: 0 auto;
-    width: 1400px;
+    width: 1150px;
     background: #FFFFFF;
 }
 
 .container_black {
     margin: 0 auto;
-    width: 1400px;
-    padding: 125px;
+    width: 1150px;
 }
 
 p.description {
@@ -92,8 +91,8 @@ p.description {
   display: flex;
 
   background-image: url(../resources/interior.png);
-  background-size: cover; /* лучше для адаптивности */
-  background-position: center;
+  background-size: cover;
+  background-position: 50%;
   background-repeat: no-repeat;
 }
 
@@ -137,6 +136,8 @@ a.btn {
 }
 
 .project__image {
+    width: 100%;
+    height: 450px;
     margin-bottom: 15px;
 }
 
@@ -172,6 +173,7 @@ a.btn {
 }
 
 .fullWidthBtn {
+    margin-top: 90px;
     display: block;
     width: 100%;
     height: 153px;
@@ -192,11 +194,11 @@ a.btn {
 
 header {
     width: 100%;
-    padding: 32px 125px 0 125px;
+    padding: 32px 0 0 0;
 }
 
 .header_container {
-    width: 1150px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -380,530 +382,161 @@ footer {
     border-bottom: 1px solid rgba(77, 77, 77, 0.5);
 }
 
-@media (max-width: 700px) {
-
+@media (max-width: 1199px) {
     .container {
-        width: auto;
-        margin: 0 auto;
-        overflow-x: hidden;
-        margin: 0;
-        padding: 0;
-    }
-
-    header {
         width: 100%;
-        margin: 0 auto;
-        box-sizing: border-box;        
-        padding: 32px 15px 0 15px;;
+        padding-left: 17px;
+        padding-right: 15px;
     }
 
-    .header_container {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .logo-link {
-        margin-right: auto;
-    }
-
-    .nav_header_link:not(:last-child) {
-        margin-right: 5px;
-    }
-
-    .nav_header {
-        float: right;
-    }
-
-    .nav_header_link {
-        font-size: 12px;
+    .first_section {
+        padding-top: 74px;
     }
 
     section {
-        padding: 15px;
-        padding-top: 50px;
+        padding-top: 120px;
     }
 
-    .first_section {
-        padding-top: 20px;
+    .nav_header {
+        display: none;
     }
 
     h1 {
-        font-size: 32px;
-        line-height: 32px;
-        margin-bottom: 30px;
-    }
-
-    .first_section {
-        box-sizing: border-box;
+        font-size: 50px;
+        letter-spacing: -1.5px;
     }
 
     .interior {
-        height: 300px;
-        background-size: cover; 
-        margin-top: 0px;
-    }
-
-    .image_text {
-        width: auto;
-        position: relative;
-        left: 5px;
-        font-size: 14px;
-        line-height: 18px;
-        margin-top: 0px;
-        bottom: 0;
-        text-align: left;
-        top: 220px;
-    }
-
-    p.description {
-        font-size: 25px;
-        line-height: 30px;
-        margin-top: 20px;
-    }
-
-    a.btn {
-        margin-top: 20px;
-        width: auto;
-        padding: 20px;
-        font-size: 16px;
-    }
-
-    .project  {
-        margin-top: 30px;
-    }
-
-    .project__image {
-        width: 100%;
-        height: 200px;
-    }
-
-    h3 {
-        font-size: 20px;
-        line-height: 25px;
-    }
-
-    .project__link {
-        font-size: 14px;
-    }
-
-    .fullWidthBtn {
-        margin-top: 40px !important;
-        height: 60px;
-        font-size: 20px;
-        line-height: 60px;
-    }
-
-    .section-long {
-        padding-bottom: 50px;
-    }
-
-    .section-black {
-        width: auto;
-        margin: 0 auto;
-        overflow-x: hidden;
-        margin: 0;
-        padding: 0;
-        padding-bottom: 50px;
-    }
-
-    .full_section_content {
-        width: 100%;
-        margin: 0 auto;
-        box-sizing: border-box;
-        padding: 51px 15px 0 15px;
-    }
-
-    .section-image {
-        width: auto;
-        margin: 0 auto;
-        overflow-x: hidden;
-        margin: 0;
-        padding: 0;
         height: 400px;
     }
 
-    .section-image_text-p {
-        bottom: 40px;
-        font-size: 18px;
-        line-height: 23px;
-    }
-
-    .contact_block_link {
-        margin-top: 15px;
-        font-size: 24px;
-        line-height: 30px;
-    }
-
-    .contact_block_link_email {
-        margin-top: 15px;
-        font-size: 24px;
-        line-height: 30px;
-    }
-
-    footer {
-        width: auto;
-        margin: 0 auto;
-        overflow-x: hidden;
-        margin: 0;
-        padding: 0;
-    }
-    
-    .style_mobile_footer {
-        width: 100%;
-        margin: 0 auto;
-        box-sizing: border-box;
-        padding: 32px 5px 32px 5px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .footer_menu_block {
-        width: auto;
-        margin-bottom: 30px;
-    }
-
-    .footer_text {
-        font-size: 18px;
-    }
-
-    .service__image {
-        height: 200px;
-    }
-}
-
-@media (max-width: 1399px) and (min-width: 1000px) {
-    .container {
-        width: 100%;
-        margin: 0 auto;
-        overflow: hidden;
-        margin: 0;
-        padding: 0;
-    }
-
-    header {
-        width: 100%;
-        margin: 0 auto;
-        box-sizing: border-box;        
-        padding: 32px 125px 0 125px;
-    }
-
-    .header_container {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .logo-link {
-        margin-right: auto;
-    }
-
-    .nav_header_link:not(:last-child) {
-        margin-right: 25px;
-    }
-
-    .nav_header {
-        float: right;
-    }
-
-    section {
-        padding: 35px 125px 35px 125px;
-        padding-top: 50px;
-    }
-
-    .first_section {
-        padding-top: 20px;
-    }
-
-    h1 {
-        font-size: 42px;
-        line-height: 42px;
-        margin-bottom: 40px;
-    }
-
-    .first_section {
-        box-sizing: border-box;
-    }
-
-    .interior {
-        height: 400px; /* или auto, если содержимое управляет размером */
-        background-size: cover; /* можно также contain, если нужно полностью влезать */
-        margin-top: 0px;
-        align-items: center;
-    }
-
     .image_text {
-        width: auto;
-        left: 18px;
-        font-size: 18px;
-        line-height: 18px;
-        margin-top: 0px;
-        bottom: 0;
-        text-align: left;
-        top: 320px;
+        bottom: 30px;
     }
 
     p.description {
-        font-size: 35px;
-        line-height: 51px;
         margin-top: 20px;
+        font-size: 35px;
+        line-height: 48px;
+        width: 690px;
     }
 
-    a.btn {
-        width: auto;
-        padding: 23px;
+    .project {
+        margin-top: 80px;
     }
 
-    .project  {
-        margin-top: 50px;
-    }
-
-    .project__image {
-        width: 100%;
-        height: 350px;
+    .project__title {
+        margin-bottom: 10px;
+        font-size: 25px;
+        line-height: 34px;
+        letter-spacing: -0.75px;
     }
 
     .fullWidthBtn {
-        margin-top: 60px !important;
-        height: 90px;
-        line-height: 90px;
+        margin-top: 102px;
     }
 
     .section-long {
-        padding-bottom: 50px;
-    }
-
-    .section-black {
-        width: auto;
-        margin: 0 auto;
-        overflow-x: hidden;
-        margin: 0;
-        padding: 0;
-        padding-bottom: 50px;
-    }
-
-    .full_section_content {
-        width: 100%;
-        margin: 0 auto;
-        box-sizing: border-box;
-        padding: 51px 125px 0px 125px;
-    }
-
-    .section-image {
-        width: auto;
-        margin: 0 auto;
-        overflow-x: hidden;
-        margin: 0;
-        padding: 0;
-        height: 550px;
-    }
-
-    .section-image_text-p {
-        bottom: 40px;
-    }
-
-    .contact_block_link {
-        margin-top: 25px;
-        font-size: 33px;
-        line-height: 45px;
-    }
-
-    .contact_block_link_email {
-        margin-top: 25px;
-        font-size: 33px;
-        line-height: 45px;
-    }
-
-    footer {
-        width: auto;
-        margin: 0 auto;
-        overflow-x: hidden;
-        margin: 0;
-        padding: 0;
-    }
-    
-    .style_mobile_footer {
-        width: 100%;
-        margin: 0 auto;
-        box-sizing: border-box;
-        padding: 35px 125px 35px 125px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .footer_menu_block {
-        width: auto;
-        margin-bottom: 30px;
+        padding-bottom: 103px;
     }
 }
 
-@media (max-width: 999px) and (min-width: 701px) {
+@media (max-width: 767px) {
     .container {
         width: 100%;
-        margin: 0 auto;
-        overflow: hidden;
-        margin: 0;
-        padding: 0;
+        padding-left: 13px;
+        padding-right: 12px;
     }
 
-    header {
-        width: 100%;
-        margin: 0 auto;
-        box-sizing: border-box;        
-        padding: 32px 75px 0 75px;
-    }
-
-    .header_container {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .logo-link {
-        margin-right: auto;
-    }
-
-    .nav_header_link:not(:last-child) {
-        margin-right: 25px;
-    }
-
-    .nav_header {
-        float: right;
-    }
-
-    section {
-        padding: 35px 75px 35px 75px;
-        padding-top: 50px;
+    .logo {
+        width: 96px;
+        height: 16px;
     }
 
     .first_section {
-        padding-top: 20px;
+        padding-top: 61px;
     }
 
     h1 {
-        font-size: 42px;
-        line-height: 42px;
-        margin-bottom: 40px;
-    }
-
-    .first_section {
-        box-sizing: border-box;
+        font-size: 30px;
+        line-height: 32px;
+        letter-spacing: -0.9px;
     }
 
     .interior {
-        height: 400px; /* или auto, если содержимое управляет размером */
-        background-size: cover; /* можно также contain, если нужно полностью влезать */
-        margin-top: 0px;
-        align-items: center;
+        margin-top: 25px;
+        height: 304px;
     }
 
     .image_text {
+        font-size: 16px;
+        line-height: 22px;
+        left: 15px;
+        bottom: 15px;
         width: auto;
-        left: 18px;
-        font-size: 18px;
-        line-height: 18px;
-        margin-top: 0px;
-        bottom: 0;
-        text-align: left;
-        top: 320px;
+    }
+
+    section {
+        padding-top: 80px;
+    }
+
+    h2 {
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: -0.42px;
     }
 
     p.description {
-        font-size: 35px;
-        line-height: 51px;
-        margin-top: 20px;
+        width: auto;
+        font-size: 22px;
+        line-height: 30px;
+        letter-spacing: -0.66px;
     }
 
     a.btn {
-        width: auto;
-        padding: 23px;
+        width: 194px;
+        padding: 15px 25px;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: -0.48px;
+        white-space: nowrap;
     }
 
-    .project  {
-        margin-top: 50px;
+    .projects {
+        margin-top: 20px;
     }
+
+    .project {
+        margin-top: 49px;
+    } 
 
     .project__image {
-        width: 100%;
-        height: 350px;
+        height: 250px;
+        margin-bottom: 20px;
+    }
+
+    .project__title {
+        margin-bottom: 11px;
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: -0.54px;
+    }
+
+    .project__link {
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: -0.48px;
     }
 
     .fullWidthBtn {
-        margin-top: 60px !important;
-        height: 90px;
-        line-height: 90px;
+        height: auto;
+        margin-top: 60px;
+        padding: 34px 0;
+        font-size: 22px;
+        line-height: 30px;
     }
 
     .section-long {
-        padding-bottom: 50px;
-    }
-
-    .section-black {
-        width: auto;
-        margin: 0 auto;
-        overflow-x: hidden;
-        margin: 0;
-        padding: 0;
-        padding-bottom: 50px;
-    }
-
-    .full_section_content {
-        width: 100%;
-        margin: 0 auto;
-        box-sizing: border-box;
-        padding: 35px 75px 0 75px;
-    }
-
-    .section-image {
-        width: auto;
-        margin: 0 auto;
-        overflow-x: hidden;
-        margin: 0;
-        padding: 0;
-        height: 550px;
-    }
-
-    .section-image_text-p {
-        bottom: 40px;
-    }
-
-    .contact_block_link {
-        margin-top: 25px;
-        font-size: 33px;
-        line-height: 45px;
-    }
-
-    .contact_block_link_email {
-        margin-top: 25px;
-        font-size: 33px;
-        line-height: 45px;
-    }
-
-    footer {
-        width: auto;
-        margin: 0 auto;
-        overflow-x: hidden;
-        margin: 0;
-        padding: 0;
-    }
-    
-    .style_mobile_footer {
-        width: 100%;
-        margin: 0 auto;
-        box-sizing: border-box;
-        padding: 32px 75px 0 75px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .footer_menu_block {
-        width: auto;
-        margin-bottom: 30px;
-    }
+        padding-bottom: 144px;
+    } 
 }
