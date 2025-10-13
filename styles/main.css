@@ -729,6 +729,10 @@ footer {
         width: 100%;
     }
 
+    .review:last-child:nth-child(2n + 1) {
+        width: 100%;
+    }
+
     .review__title {
         font-size: 25px;
         line-height: 34px;
