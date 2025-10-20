@@ -353,14 +353,14 @@ header {
     width: 24px;
     height: 24px;
     margin-bottom: 26px;
-    background-image: url('/resources/contact_block.png');
+    background-image: url('../resources/contact_block.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50%;
 }
 
 .email_link::before {
-    background-image: url('/resources/mail_symbols.png');
+    background-image: url('../resources/mail_symbols.png');
 }
 
 .contact_block_link:hover {
