@@ -19,7 +19,7 @@
                     <img class="logo" src="resources/logo_metrica.png" alt="Логотип Метрика">
                 </a>
                 <div class="nav_header">
-                    <a href="" class="nav_header_link grey_nav_header">О НАС</a>
+                    <a href="#aboutUs" class="nav_header_link grey_nav_header">О НАС</a>
                     <a href="#project" class="nav_header_link">ПРОЕКТЫ</a>
                     <a href="#services" class="nav_header_link">УСЛУГИ</a>
                     <a href="#contact" class="nav_header_link">КОНТАКТЫ</a>
@@ -33,7 +33,7 @@
             </div>
         </section>
         
-        <section>
+        <section id="aboutUs">
             <h2>О НАС</h2>
             <p class="description">Студия основана в 2011 году. Полностью отдаемся проектированию и реализации интерьеров. К нам обращаются за уютом, индивидуальными решениями и практичностью. Находим конструктивные решения для каждого интерьера, вплоть до каждой детали — нацелены на результат.</p>
             
@@ -113,7 +113,7 @@
         </div>
     </section>
     <div class="container">
-        <section id="" class="section-long">
+        <section id="" class="section-long  long_reviews">
             <h2>ОТЗЫВЫ</h2>
             <ul class="reviews">
                 <li class="review">
@@ -151,35 +151,62 @@
             </ul>
         </section>
     </div>
-    <!--  
-    <section class="section-full section-nopadd">
+    <section class="gallery-section">
         <div class="gallery">
-            <p  class="gallery_text">Проект  Двухкомнтаной<br>квартиры в ЖК Лесной Пейзаж</p>
-        </div>
-    </section>
-    <section class="section-image">
-        <div class="full_section_content">
-            <div class="section-image_text">
-                <p  class="section-image_text-p">Проект  Двухкомнтаной<br>квартиры в ЖК Лесной Пейзаж</p>
+            <div class="gallery__title-wrapper">
+                <div class="container gallery__container">
+                    <p class="gallery__title">галерея проектов</p>
+                </div>
+            </div>
+            <div class="gallery__slides">
+                <div class="gallery__slide gallery__slide_active box_one">
+                    <div class="container">
+                        <p class="text_name_gallery__slide">Проект Двухкомнтаной</br>квартиры в ЖК Лесной Пейзаж</p>
+                    </div>
+                </div>
+                <div class="gallery__slide box_two">
+                    <div class="container">
+                        <p class="text_name_gallery__slide">Проект гостиной в ЖК Маяк</p>
+                    </div>
+                </div>
+                <div class="gallery__slide box_three">
+                    <div class="container">
+                        <p class="text_name_gallery__slide">Визуализация кухни-гостиной</br>в частном доме</p>
+                    </div>
+                </div>
+                <div class="gallery__slide box_four">
+                    <div class="container">
+                        <p class="text_name_gallery__slide">Проект кухни в скандинавском</br>стиле для ЖК Северный Ветер</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery__controls-wrapper">
+                <div class="container gallery__container">
+                    <div class="gallery_controls">
+                        <button class="gallery__control gallery__control-prev"><img class="image_arrow" src="resources/arrow_prev.png" alt="стрелка назад"></button>
+                        <button class=" gallery__control gallery__control-next"><img class="image_arrow control-next" src="resources/arrow_prev.png" alt="стрелка вперёд"></button>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+    </section> 
     <div class="container">
         <section id="contact" class="contact-block">
             <h2 class="contact_h2">Контакты</h2>
-            <p>
-                <a class="contact_block_link" href="tel:+79358954535">+7 935 895-45-35</a>
-            </p>
-            <p>
-                <a class="contact_block_link_email" href="mailto:hello@mail.com">hello@mail.com</a>
-            </p>
-            <hr class="line_contact">
+            <div class="contact_links_block">
+                <p>
+                    <a class="contact_block_link" target="_blank" href="tel:+79358954535">+7 935 895-45-35</a>
+                </p>
+                <p>
+                    <a class="contact_block_link email_link" target="_blank" href="https://t.me/antoncher17">antoncher17</a>
+                </p>
+            </div>
         </section>
     </div>
     <footer>
-        <div class="style_mobile_footer">
+        <div class="style_mobile_footer container-footer">
             <div class="footer_menu_block">
-                <a href="" class="nav_header_link footer_link footer_link_grey">О НАС</a>
+                <a href="#aboutUs" class="nav_header_link footer_link footer_link_grey">О НАС</a>
                 <a href="#project" class="nav_header_link footer_link">ПРОЕКТЫ</a>
                 <a href="#services" class="nav_header_link footer_link">УСЛУГИ</a>
                 <a href="#contact" class="nav_header_link footer_link">КОНТАКТЫ</a>
@@ -187,6 +214,6 @@
             <p class="footer_text">студия дизайна интерьера Метрика — 2023</p>
         </div>
     </footer>
-    -->
+    <script src="script/gallery.js"></script>
 </body>
 </html>
