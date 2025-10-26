@@ -12,20 +12,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <div class="container">
-        <header>
+    
+    <header class="header">
+        <div class="container">
             <div class="header_container">
                 <a href="/" class="" >
                     <img class="logo" src="resources/logo_metrica.png" alt="Логотип Метрика">
                 </a>
                 <div class="nav_header">
-                    <a href="#aboutUs" class="nav_header_link grey_nav_header">О НАС</a>
+                    <a href="#aboutUs" class="nav_header_link">О НАС</a>
                     <a href="#project" class="nav_header_link">ПРОЕКТЫ</a>
                     <a href="#services" class="nav_header_link">УСЛУГИ</a>
                     <a href="#contact" class="nav_header_link">КОНТАКТЫ</a>
                 </div>
+
+                <div class="js-burger-btn burger-btn"></div>
             </div>
-        </header>
+        </div>
+    </header>
+
+    <div class="js-burger burger">
+        <div class="burger__content">
+            <a href="/" class="" >
+                <img class="logo logo_burger" src="resources/logo_metrica.png" alt="Логотип Метрика">
+            </a>
+            <nav class="burger-nav">
+                <a href="#aboutUs" class="nav_header_link burger-nav__link">О НАС</a>
+                <a href="#project" class="nav_header_link burger-nav__link">ПРОЕКТЫ</a>
+                <a href="#services" class="nav_header_link burger-nav__link">УСЛУГИ</a>
+                <a href="#contact" class="nav_header_link burger-nav__link">КОНТАКТЫ</a>
+            </nav>
+            <div class="burger_contacts js-burger__content">
+                <p class="burger_contacts_title">для связи:</p>
+                <a class="burger_contacts_link" target="_blank" href="tel:+79358954535">+7 935 895-45-35</a>
+                <a class="burger_contacts_link email_link_burger" target="_blank" href="https://t.me/antoncher17">antoncher17</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
         <section class="first_section">
             <h1>Современные и стильные<br>интерьеры для комфортной жизни</h1>
             <div class="intro-image">
@@ -109,7 +133,7 @@
                     <h3 class="white service_title">Комплектация</h3>
                 </div>
             </div>
-            <a href="" class="full-width-btn full-width-btn_inverted">Смотреть все проекты</a>
+            <button class="js-btn full-width-btn full-width-btn_inverted">Заказать услугу</button>
         </div>
     </section>
     <div class="container">
@@ -214,6 +238,21 @@
             <p class="footer_text">студия дизайна интерьера Метрика — 2023</p>
         </div>
     </footer>
+    <div class="js-popup popup ">
+        <div class="js-popup__content popup__content">
+            <p class="popup__title">Заказать услугу</p>
+            <p class="popup__text">Заполните форму, мы свяжемся с вами в течение суток</p>
+            <form class="form_fields" autocomplete="on">
+                <input class="input_modal" type="text" name="name" placeholder="Имя">
+                <input class="input_modal" type="email" name="email" placeholder="Электронная почта">
+                <input class="input_modal" type="tel" name="phone" placeholder="Номер телефона">
+            </form>
+            <button class="full-width-btn full-width-btn_inverted popup-btn">Отправить</button>
+            <div class="js-popup__close-btn popup__close-btn"></div>
+        </div>
+    </div>
+    <script src="script/burger.js"></script>
     <script src="script/gallery.js"></script>
+    <script src="script/popup.js"></script>
 </body>
 </html>
